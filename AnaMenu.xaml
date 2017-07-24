@@ -1,0 +1,29 @@
+﻿<Window x:Class="AracKiralama.AnaMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AracKiralama"
+        mc:Ignorable="d"
+        Title="AnaMenu" Height="350" Width="525"
+        WindowState="Maximized"
+        >
+    <Grid Loaded="ilkDegerler">
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="27" Margin="0,0,0,0" VerticalAlignment="Top">
+            <MenuItem Header="KAYIT" Height="27" Width="100" >
+                <MenuItem Header="Araçlar" HorizontalAlignment="Left" Width="200" Click="aracAc"/>
+                <MenuItem Header="Müşteriler" HorizontalAlignment="Left" Width="200" Click="musteriAc"/>
+                <MenuItem Header="Araç Kiralama" HorizontalAlignment="Left" Width="200"/>
+            </MenuItem>
+            <MenuItem Header="RAPORLAMA" Height="27" Width="100" >
+                <MenuItem Header="Müşteri Listesi" HorizontalAlignment="Left" Width="200"/>
+                <MenuItem Header="Araç Listesi" HorizontalAlignment="Left" Width="200"/>
+                <MenuItem Header="Kiralama Raporları" HorizontalAlignment="Left" Width="200"/>
+            </MenuItem>
+            <MenuItem Header="ÇIKIŞ" Height="27" Width="100" Click="_cik">
+                
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>
